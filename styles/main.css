@@ -1,0 +1,309 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin: 0 auto;
+	border: solid 3px #931420;
+	background-color: #fffded;
+}
+
+html{
+	background-color: white;
+}
+
+a:hover{
+	font-style: italic;
+}
+
+a:focus{
+	font-style: italic;
+}
+
+/* the styles for the header */
+header{
+	padding: 1.5em 0 2em 0;
+	border-bottom: solid 3px #931420;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+
+header h2{
+	font-size: 175%;
+	color: #800000;
+}
+
+header h3{
+	font-size: 130%;
+	font-style: italic;
+}
+
+#nav_menu ul{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style-type: none;
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	list-style-type: none;
+}
+
+#nav_menu ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+
+}
+
+#nav_menu .current{
+	color: yellow;
+}
+
+#nav_menu li ul{
+	visibility: hidden;
+	position: absolute;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+#nav_menu ul ul li{
+	float: none;
+}
+
+#nav_menu li ul li{
+	clear: both;
+}
+
+#nav_menu li:hover > ul{
+	visibility: visible;
+	display: block;
+}
+
+#nav_menu li ul:hover{
+	visibility: visible;
+	display: block;
+}
+
+#nav_menu li ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+/* the styles for the section */
+main {
+	clear: left;
+}
+
+main section h2{
+	font-size: 130%;
+	color: #800000;
+	padding-top:.5em;
+	padding-bottom: .25em;
+}
+
+main section h1{
+	font-size: 150%;
+	margin: 0;
+	padding-top: 5em;
+	padding-bottom: .25em;
+}
+
+main aside h2{
+	font-size: 130%;
+	color: #800000;
+	padding-top:.5em;
+	padding-bottom: .25em;
+}
+
+main aside h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+section{
+	width: 65.625%;
+	float: right;
+	padding: 0 2.5% 20px 2.5%;
+}
+
+main aside{
+	width: 26.875%;
+	float: right;
+	padding-left: 2.5%;
+	padding-bottom: 20px;
+}
+
+main h1 {
+	font-size: 150%;
+	border-top: 3px;
+	border-bottom: solid 3px #931420;
+	padding-top: .3em;
+	padding-bottom: .3em;
+}
+
+main h2 {
+	font-size: 130%;
+	color: black;
+	padding-top:.5em;
+	padding-bottom: .25em;
+}
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+main link:focus main link:hover{
+	font-style: italic;
+}
+
+main aside img{
+	padding-bottom: 1em;
+}
+
+main img{
+	padding-bottom: 1em;
+	border: black;
+}
+
+main p{
+	padding-bottom: .5em;
+}
+
+main blockquote{
+	padding: 0 2em;
+	font-style: italic;
+}
+
+main ul{
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+
+main li{
+	padding-bottom: .35em;
+	list-style-type: circle;
+}
+
+main article h2{
+	color: #800000;
+	margin-bottom: 5px;
+}
+
+main article h3{
+	color: black;
+}
+
+main section p{
+	color: black;
+}
+h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
+}
+
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	color: #800000;
+}
+
+article img{
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin-left: 1em;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	border: 1px solid black;
+}
+
+article h2{
+	padding-top: 0;
+}
+
+article h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* the styles for the footer */
+footer{
+	background-color: #931420;
+	clear: both;
+}
+footer p{
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.shadow{
+	text-shadow: 1px 1px 1px #800000;
+}
+
+#mobile_menu{
+	display: none;
+}
+
+@media only screen and (max-width: 767px){
+	header img {float: none;}
+	header {text-align: center;}
+	section{
+		float: none;
+		width: 95%;
+	}
+	aside{
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img {max-width: 30%;}
+	#speakers {
+		column-count: 2;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+	}
+	#nav_menu{
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slick_menu{
+		background-color: #800000;
+	}
+}
+
+@media only screen and (max-width: 959px){
+	section h1{font-size: 135%;}
+	section h2, aside h2{font-size: 120%;}
+}
+
+@media only screen and (max-width: 479px){
+	body{font-size: 90%;}
+}
